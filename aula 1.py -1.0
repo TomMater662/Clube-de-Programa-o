@@ -1,21 +1,21 @@
-nun7 = int(input('Digite a primeira nota '))
-nun8 = int(input('Digite a segunda nota '))
-nun9 = int(input('Digite a terceira nota '))
-nun10 = int(input('Digite a quarta nota '))
+num7 = int(input('Digite a primeira nota '))
+num8 = int(input('Digite a segunda nota '))
+num9 = int(input('Digite a terceira nota '))
+num10 = int(input('Digite a quarta nota '))
 resultado = 0
 
-resultado = (nun7 + nun9 + nun8 + nun10) /4 
+resultado = (num7 + num9 + num8 + num10) /4 
 print('A média é ' +str(resultado))
 
 
-nun11 = int(input('Digite a primeira nota '))
-nun12 = int(input('Digite a segunda nota '))
-nun13 = int(input('Digite a terceira nota '))
-nun14 = int(input('Digite a quarta nota '))
+num11 = int(input('Digite a primeira nota '))
+num12 = int(input('Digite a segunda nota '))
+num13 = int(input('Digite a terceira nota '))
+num14 = int(input('Digite a quarta nota '))
 resultado = 0
 
-resultado = (nun11 +nun12 + nun13+ nun14) /4 
+resultado = (num11 +num12 + num13+ num14) /4 
 print('A média é ' +str(resultado))
 
-resultado = ((nun7 + nun8 + nun9 + nun10) /4) + ((nun11 + nun12 + nun13 +nun14) /4)
+resultado = ((num7 + num8 + num9 + num10) /4) + ((num11 + num12 + num13 +num14) /4)
 print ('A soma das médias é ' + str(resultado))
