@@ -1,0 +1,14 @@
+import random
+
+alea = random.randint(0, 2)
+
+opcao = ['dica: começa com 1 e termina com 4', 'dica: é maior que 1233', 'dica: é menor que 1235']
+
+comput = opcao[alea]
+
+tent = input('digite sua senha: ')
+if (tent == '1234') : print ('vc entrou.')
+
+else : 
+    print ('senha errada, tente novamente.')
+    print (comput)
