@@ -1,0 +1,53 @@
+import random
+
+numero_secreto = random.randint(1, 100)
+tentativas = 0
+max_tentativas = 10
+
+def fase2 ():
+    print ("""Parabéns! Você Ganhou!\n
+Você Passou Para Fase 2""")
+    import random
+
+    alea = random.randint(0, 2)
+
+    opcao = ['tesoura', 'papel', 'pedra']
+
+    comput = opcao[alea]
+
+
+    player = input('pedra, papel ou tesoura? ')
+    
+    while 1:
+        if (comput == 'pedra' and player == 'tesoura'):
+            print ('computador ganhou') 
+
+        elif (comput == 'tesoura' and player == 'papel'):
+            print ('computador ganhou') 
+
+        elif (comput == 'papel' and player == 'pedra'):
+            print ('computador ganhou') 
+    
+        elif (player == comput) : 
+            print('empate')
+        else : 
+            print ('paraboins vc ganhou!!!')
+            break
+   
+
+print("Bem-vindo ao Jogo de Adivinhação 6.7!")
+
+while tentativas < max_tentativas:
+    palpite = int(input("Tente adivinhar o número: "))
+    tentativas += 1
+
+    if palpite == numero_secreto:
+        fase2 ()
+        break
+    elif palpite > numero_secreto:
+        print("Tente um número menor.")
+    else:
+        print("Tente um número maior.")
+
+if tentativas == max_tentativas and palpite != numero_secreto:
+    print(f"Game Over. O número era {numero_secreto}.")
