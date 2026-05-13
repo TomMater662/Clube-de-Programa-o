@@ -1,3 +1,5 @@
+import math
+
 def soma(val1, val2):
     resultado = val1 + val2
     print (resultado)
@@ -24,7 +26,7 @@ def bsk(a, b, c):
     if d < 0:
         print("Essa equação não tem raízes reais.")
     elif d == 0:
-        r = -val_b / (2 * a)
+        r = -b / (2 * a)
         print("A equação tem apenas uma raiz real (raiz dupla):", r)
     else:
         result1 = x1(a, b, d)
